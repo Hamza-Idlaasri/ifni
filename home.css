@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #faf9f6;
+}
+
+#landing-page {
+    position: relative;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px 50px;
+}
+
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition-duration: 180ms;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    filter: invert(100%);
+}
+
+nav a:hover {
+    color: #446E7E;
+}
+
+#slogan {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    animation-name: slogan;
+    animation-duration: 800ms;
+    animation-delay: 100ms;
+    animation-timing-function: linear;
+}
+
+.hr {
+    margin-top: 50px;
+    width: 200px;
+    border: 1px solid white;
+    animation-name: hr;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: linear;
+}
+
+#contact {
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-us {
+    text-align: center;
+    background: #ddc9c57c;
+}
+
+#description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0 auto 100px auto;
+    padding: 60px 20px;
+}
+
+#descr-img {
+    /* width: 25%; */
+    position: relative;
+}
+
+.title {
+    padding-bottom: 20px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 42px;
+    color: #613842;
+}
+
+#descr-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    opacity: 0;
+    transition-duration: 600ms;
+    transition-delay: 250ms;
+}
+
+#dc-img-1 {
+    opacity: .0;
+    transition-duration: 600ms;
+}
+
+#dc-img-2 {
+    width: 65%;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    opacity: .0;
+    transition-duration: 600ms;
+    transition-delay: 100ms;
+}
+
+#descr-text {
+    width: 30%;
+    /* padding: 0 20px; */
+    text-align: left;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+#dc-title {
+    opacity: 0;
+    transition-duration: 600ms;
+    transition-delay: 200ms;
+}
+
+#road-map {
+    text-align: center;
+    /* width: 100%; */
+    /* margin: auto; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#road-line {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 100px;
+    background: red;
+    transition-duration: 200ms;
+}
+
+.row {
+    display: flex;
+    padding: 50px 100px;
+    /* width: 85%; */
+}
+
+.pair {
+    /* background: #446e7e2c; */
+}
+
+.impair {
+    /* background: #446e7e17; */
+}
+
+.column {
+    width: 50%;
+    padding: 50px;
+}
+
+.left-clm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-clm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h-nbr {
+    font-size: 62px;
+    margin-bottom: 20px;
+    color: #446E7E;
+}
+
+.h-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'PT Serif', serif;
+    color: #446E7E;
+}
+
+.clm-dsc {
+    width: 80%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#enjoy {
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+#benefits {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card {
+    width: 28%;
+    background: white;
+    box-shadow: 0px 0px 12px rgb(180, 180, 180);
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.card img {
+    transition-duration: 500ms;
+}
+
+.card:hover img {
+    transform: scale(105%);
+}
+
+.card h3 {
+    padding: 20px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'PT Serif', serif;
+    /* color: #8d646e; */
+    color: #446E7E;
+}
+
+.card .benefit-dsc {
+    padding: 0px 20px 20px 20px;
+    width: 85%;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+    line-height: 1.4;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#contact-us {
+    background: #085467;
+    display: flex;
+}
+
+#send-msg {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px;
+    background: #c5b2ae;
+}
+
+.input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+#send-btn {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    background: black;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition-duration: .25s;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#send-btn:hover {
+    background: #085467;
+}
+
+#info {
+    padding: 20px 50px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#info h2 {
+    color: white;
+    padding: 20px;
+    border-bottom: 2px solid white;
+    letter-spacing: 1px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+}
+
+#info h3 {
+    color: white;
+    font-weight: 400;
+    padding: 20px;
+}
+
+#social-media {
+    padding: 25px 20px;
+}
+
+.media-logos {
+    filter: invert(100%);
+    margin: 10px 20px;
+}
+
+.logo-hover:hover {
+    filter: invert(60%);
+}
+
+#infos {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#copy-right {
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+}
+
+#copy-right img {
+    filter: invert(90%);
+    padding: 0 8px;
+}
+
+.fonts {
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Russo One', sans-serif;
+}
+
+#map {
+    color: #085467;
+    font-weight: bold;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+
+/* @keyframes slogan {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+@keyframes hr {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 200px;
+    }
+}

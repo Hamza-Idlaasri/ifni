@@ -78,10 +78,10 @@ nav a:hover {
     letter-spacing: 2px;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
-#contact h5 {
+#contact p {
     padding: 10px 0;
 }
 
